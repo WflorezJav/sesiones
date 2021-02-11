@@ -1,0 +1,27 @@
+body
+{
+    background-color: white;
+}
+
+h3
+{
+    color: blue;
+}
+
+#titulo
+{
+    color: darkorchid;
+}
+
+.clase1
+{
+    color: gold;
+}
+
+
+img[alt=Imagen]
+{
+    width: 200px;;
+    border: solid;
+}
+

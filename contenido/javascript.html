@@ -1,0 +1,158 @@
+<html>  
+    <head>
+        <title>Javascript</title>
+
+        <!-- <script>
+            alert("Hola Sesion 4");
+        </script> -->
+
+        <script src="../javascript/javascript.js"></script>
+    </head>
+    <body>
+        <!-- Codigo desde el elemento de html -->
+        <button type="button" onclick="alert('hola')">Hola</button>
+        <input type="text" id="nombre" name="nombre" >
+        <h1 id="titulo">Este es un titulo de javascript</h1>
+
+        <h1 onclick="FuncionElemento(this)">Este es un elemento</h1>
+
+        <h1 onclick="FuncionElemento(this)">Este es un titulo elemento 2 </h1>
+        
+
+
+        <button type="button" onclick="SaludarPersona()">Saludar Persona</button>
+
+        <br>
+
+        <button type="button" onclick="Evento()">Ejecutar Evento</button>
+
+
+        <script>
+            var input2 = document.getElementById("nombre");
+            console.log("input", input2)
+
+            var titulo = document.getElementById("titulo");
+            
+            titulo.style.backgroundColor = "green";
+            
+            titulo.style.backgroundColor = "yellow";
+            console.log("titulo elemento: ", titulo)
+            console.log("titulo texto: ", titulo.innerHTML)
+
+            
+
+            function EjecutarAlerta(parametro1, parametro2)
+            {
+                // alert("Hola desde la funcion");
+                // alert(parametro1 + parametro2)
+                return parametro1 + parametro2;
+            }
+
+            
+
+
+
+            function FuncionElemento(elemento)
+            {
+                // alert("Hola desde la funcion");
+                var resultado = EjecutarAlerta(1,5);
+
+                var titulor = document.getElementById("titulo");
+                elemento.style.color = "red";
+
+                alert(titulor.innerHTML + " " + resultado);
+            }
+
+
+            var Persona = function(nombre, apellido, identificacion, edad, fn)
+            {
+                this.nombre = nombre;
+                this.apellido = apellido;
+                this.identificacion = identificacion;
+                this.edad = edad;
+                this.fn = fn;
+
+                this.CalularAnio();
+            }
+
+            // Declaracion de prototype
+
+            Persona.prototype.MostrarInformacion = function()
+            {
+                alert("nombre:" + this.nombre + " apellido:" + this.apellido + " identificacion:" + this.identificacion + " edad: " + this.edad  + " año: " + this.anio)
+            }
+
+            Persona.prototype.CalularAnio = function()
+            {
+                this.anio = 2021 - this.edad;                
+            }
+
+            Persona.prototype.DibujarPersona = function(fn)
+            {
+                if(fn)
+                {
+                    fn(this.nombre);
+                }else
+                {
+                    alert("No se ha recibido un parametro");
+                }               
+            }
+
+
+            function SaludarPersona() {
+                // alert("hola desde saludar");
+                var persona1 = new Persona("wilmer","florez","11111",35,Suma);
+                var persona2 = new Persona("pedro","perez","22222",25,Resta);
+                var persona3 = new Persona("juan","parra","3333",45,Resta);
+
+                persona1.MostrarInformacion();
+                persona2.MostrarInformacion();
+                persona3.MostrarInformacion();
+
+                persona1.fn(10,5);
+                persona2.fn(10,5);
+                persona3.fn(10,5);
+
+                console.log(persona1);
+            }
+
+            function mostraralerta(params) {
+                alert(params);
+            }
+
+            //Progranmacion Orientada a eventos
+            function EjecutarFuncion(param, numero1, numero2) {
+                if(param)
+                {
+                    param(numero1, numero2);
+                }else
+                {
+                    alert("No se ha recibido un parametro");
+                }
+            }
+
+            function Evento() {
+                var varnm1 = 6;
+                var varnm2 = 10;
+
+                var varfn =  Suma;
+
+                if(varnm1 > varnm2)
+                {
+                    varfn =  Resta;
+                }
+
+                // EjecutarFuncion(varfn, varnm1, varnm2);
+                 EjecutarFuncion();
+            }
+
+            function Suma(param1 , param2) {
+                alert(param1 + param2);
+            }
+
+            function Resta(param1 , param2) {
+                alert(param1 - param2);
+            }
+        </script>
+    </body>
+</html>

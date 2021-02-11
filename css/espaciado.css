@@ -1,0 +1,42 @@
+.external
+{
+    background-color: red;
+    padding: 10px;
+}
+
+.internal
+{
+    background-color: green;
+    margin: 10px;
+    border: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+p{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contenedor
+{
+ width: 150pt;
+ display: inline-block;
+ text-align: justify;   
+}
+
+.poscontainer
+{
+    width: 150pt;
+    text-align: justify;
+    margin-bottom: 5pt;
+}
+
+.poscontainer2
+{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    background-color: orange;
+}

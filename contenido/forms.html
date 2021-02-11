@@ -1,0 +1,108 @@
+<html>  
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <form>
+            <h3>Input Text</h3>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"> <br>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido"> <br>
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" value="25"> <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required> <br>
+
+
+            <h3>Input Radio</h3>
+            <label for="edad20">Entre 0-20</label>
+            <input type="radio" id="edad20" name="edad"><br>
+
+            <label for="edad30">Entre 30-40</label>
+            <input type="radio" id="edad30" name="edad"><br>
+
+            <label for="edad40">Entre 40-50</label>
+            <input type="radio" id="edad40" name="edad"><br>
+
+
+            <!-- <label for="edad20">Entre 0-20</label>
+            <input type="radio" id="edad50" name="edad1"><br>
+
+            <label for="edad30">Entre 30-40</label>
+            <input type="radio" id="edad60" name="edad1"><br>
+
+            <label for="edad40">Entre 40-50</label>
+            <input type="radio" id="edad70" name="edad1"><br> -->
+
+            <h3>Input CheckBox</h3>
+            <label for="carro1">Carro 1</label>
+            <input type="checkbox" id="carro1" name="carro1">  <br>
+
+            <label for="carro2">Carro 2</label>
+            <input type="checkbox" id="carro2" name="carro2">  <br>
+
+            <label for="carro3">Carro 3</label>
+            <input type="checkbox" id="carro3" name="carro3">  <br>
+
+
+            <h3>Submit</h3>
+            <input type="submit">
+
+            <button>Enviar desde Button</button>
+
+
+            <h3>TextArea</h3>
+            <label for="textarea1">Descripcion</label>
+            <textarea name="textarea1" id="textarea1">
+                Texto predefinidos desde TextArea
+            </textarea> <br>
+
+            <h3>Seleccion</h3>
+            <label for="select1">Color</label>
+            <select name="select1" id="select1">
+                <option value="1">Verde</option>
+                <option value="2">Rojo</option>
+                <option value="3">Azul</option>
+                <option value="4">Morado</option>
+            </select>
+
+            <select name="select2" id="select2" multiple>
+                <option value="1">Verde</option>
+                <option value="2">Rojo</option>
+                <option value="3">Azul</option>
+                <option value="4">Morado</option>
+            </select>
+
+
+            <h3>FieldSet</h3>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre"> <br>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido"> <br>
+
+                <button>Enviar Datos personales</button>
+            </fieldset> <br>
+            
+            <fieldset>
+                <legend>Tipo de Vehiculo</legend>
+                <label for="carro1">Carro 1</label>
+                <input type="checkbox" id="carro1" name="carro1">  <br>
+
+                <label for="carro2">Carro 2</label>
+                <input type="checkbox" id="carro2" name="carro2">  <br>
+
+                <label for="carro3">Carro 3</label>
+                <input type="checkbox" id="carro3" name="carro3">  <br>
+                <button>Enviar Datos Tipo Vehiculo</button>
+                <input type="button" name="button1" id="button1" value="Enviar Datos Tipo Vehiculo">
+            </fieldset>
+        </form>
+    </body>
+</html>

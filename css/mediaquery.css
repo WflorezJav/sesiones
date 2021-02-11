@@ -1,0 +1,49 @@
+
+
+/* PSEUDOCLASES*/
+.pseudo
+{
+    background-color: red;
+}
+
+.pseudo:hover
+{
+    background-color: blue;
+}
+
+.pseudo:active
+{
+    border: green;
+    border: solid;
+}
+
+/*MEDIA QUERY  */
+
+
+.fila{
+    display: table;
+    padding: 20px;
+}
+
+.columna{
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+@media (max-width: 992px)
+{
+    .columna{
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .columna{
+        width: 100%;
+        background-color: purple !important;
+    }
+}
+
+

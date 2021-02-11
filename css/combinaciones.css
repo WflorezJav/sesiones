@@ -1,0 +1,31 @@
+p.claseerror
+{
+    background-color: orange;
+    font-weight: bold;
+
+}
+
+
+img{
+    width: 400px;
+}
+
+p ~ .img1
+{
+    border: solid;
+    color: red;
+}
+
+
+.imagen1
+{
+    border: solid;
+}
+
+.imagen2
+{
+    color: red;
+}
+
+
+
